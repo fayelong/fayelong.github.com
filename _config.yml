@@ -9,8 +9,8 @@ pygments: true
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : Fayelong
-tagline: Site Tagline
+title : Fayelong'blog
+tagline: 
 author :
   name : Fayelong
   email : feilog.liang@gmail.com

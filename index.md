@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Hello!
-tagline: continue
+tagline: to be continue
 ---
 {% include JB/setup %}
 
