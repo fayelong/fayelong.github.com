@@ -50,9 +50,6 @@ tags: [jekyll]
 		jekyll server
 
 
-
-- 提交更新
-
 	    $ git clone git@github.com:username/username.github.com.git //本地如果无远程代码，先做这步，不然就忽略
 	    $ cd .ssh/username.github.com //定位到你blog的目录下
 	    $ git pull origin master //先同步远程文件，后面的参数会自动连接你远程的文件
