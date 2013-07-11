@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Hello!
+title: It works
 tagline: to be continue
 ---
 {% include JB/setup %}
