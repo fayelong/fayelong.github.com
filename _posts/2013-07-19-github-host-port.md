@@ -26,7 +26,7 @@ tags: [git]
 	vi config
 
 	Host github.com
-	User feilog.liang@gmail.com
+	User ****@gmail.com
 	Port 443
 	Hostname ssh.github.com
 	identityfile ~/.ssh/id_rsa
