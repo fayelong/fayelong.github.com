@@ -12,10 +12,14 @@ tags: [algorithm]
 
 使用递归解决汉诺塔问题
 
+
+
+> **使用递归的一个关键就是，我们先定义一个函数，不用急着去实现它， 但要明确它的功能。**
+
 定义一个函数：
 
 	void hanoi(int n, char src , char bri , char dst);
-	//把n个圆盘从src柱子移动到dst柱子，其中可以借助柱子bri
+	//功能：把n个圆盘从src柱子移动到dst柱子，其中可以借助柱子bri
 
 整个递归的过程：
 
