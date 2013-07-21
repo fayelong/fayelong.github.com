@@ -9,14 +9,18 @@ tags: [algorithm]
 
  写程序将一个栈按升序排序。对这个栈是如何实现的，你不应该做任何特殊的假设。程序中能用到的栈操作有：push | pop | peek | isEmpty。   
 
+{% highlight cpp %}
+
     #include <iostream>
     #include <queue>
     #include <stack>
     using namespace std;
 
+{% endhighlight %}
+
 方案1，使用一个附加栈。将栈1出栈，如果栈2为空，则直接将数据压栈。如果栈2不为空，则栈2顶的数据相比较：如果栈2顶的数据比该值小，则直接压栈；否则，栈2出栈压回栈1，再比较，直到栈2为空或者栈2顶数据比该值小。
 
-{% highlight c %}
+{% highlight cpp %}
 
     stack<int> SortStack1(stack<int> s)
     {
@@ -39,6 +43,8 @@ tags: [algorithm]
 
 方案2：使用一个优先队列，原栈中的元素不断出栈然后插入优先队列， 直到原栈为空。然后再将优先队列中的元素不断压回原栈，这样操作后， 栈中的元素便有序化了。
 
+{% highlight cpp %}
+
     stack<int> SortStack2(stack<int> s)
     {
     	priority_queue<int,vector<int>,greater<int>> q;
@@ -55,7 +61,11 @@ tags: [algorithm]
     	return s;
     }
 
+{% endhighlight %}
+
 主函数：
+
+{% highlight cpp %}
 
     void PrintStack(stack<int> s)
     {
@@ -83,6 +93,8 @@ tags: [algorithm]
     
     	return 0;
     }
+
+{% endhighlight %}
 
 参考资料：
 

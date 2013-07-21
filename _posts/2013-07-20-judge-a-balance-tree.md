@@ -14,6 +14,8 @@ tags: [algorithm]
 
 假设只考虑二叉树，我们可以通过遍历一遍二叉树求出每个叶子结点到根结点的距离。 使用中序遍历，依次求出从左到右的叶子结点到根结点的距离，递归实现。
     
+{% highlight cpp %}
+
     #include <iostream>
     #include <cstring>
     #include <cmath>
@@ -89,6 +91,8 @@ tags: [algorithm]
     	cout<<IsBalance(head)<<endl;
     	return 0;
     }
+
+{% endhighlight %}
 
 参考资料：
 

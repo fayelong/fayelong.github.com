@@ -18,10 +18,16 @@ tags: [algorithm]
 
 定义一个函数：
 
+{% highlight cpp %}
+
 	void hanoi(int n, char src , char bri , char dst);
 	//功能：把n个圆盘从src柱子移动到dst柱子，其中可以借助柱子bri
 
+{% endhighlight %}
+
 整个递归的过程：
+
+{% highlight cpp %}
 
 	//1~n的圆盘在src上，bri和dst闲置
 	1.初始状态：(1~n,0,0);
@@ -41,7 +47,11 @@ tags: [algorithm]
 	对应代码：
 	cout<<"Move disk "<<n<<" from "<<src<<" to "<<dst<<endl;
 
+{% endhighlight %}
+
 因此，整个汉诺塔的完整代码如下：
+
+{% highlight cpp %}
 
 	#include <iostream>
 	using namespace std;
@@ -65,6 +75,8 @@ tags: [algorithm]
 		hanoi(n,'A','B','C');
 		return 0;
 	}
+
+{% endhighlight %}
 
 参考资料：
 

@@ -9,11 +9,17 @@ tags: [algorithm]
 
 使用两个栈实现一个队列
     
+{% highlight cpp %}
+
     #include <iostream>
     #include <stack>
     using namespace std;
 
+{% endhighlight %}
+
 方法1,使用两个栈sin,sout，入队列时，将sout压入sin,然后数据压入栈sin，此时，sout是空的；出队列时，将sin压入sout，然后sout弹出，此时，sin是空的；
+
+{% highlight cpp %}
 
     template <typename T>
     class MyQueue1{
@@ -59,9 +65,13 @@ tags: [algorithm]
     
     };
 
+{% endhighlight %}
+
 方法2：方法1会导致大量的数据移动，无论是进队列还是出队列。改进如下：
 
 入队列时，直接将数据压入sin，出栈时，如果sout不为空，则sout弹出，否则，将sin压入sout后，再弹出
+
+{% highlight cpp %}
 
     template <typename T>
     class MyQueue2{
@@ -116,7 +126,11 @@ tags: [algorithm]
     	stack<T> sin, sout;
     };
 
+{% endhighlight %}
+
 主函数：
+
+{% highlight cpp %}
 
     int main(){
     	MyQueue1<int> mq1;
@@ -133,6 +147,8 @@ tags: [algorithm]
     
     	return 0;
     }
+
+{% endhighlight %}
 
 参考资料：
 
