@@ -151,3 +151,7 @@ tags: [algorithm]
 	}
 
 {% endhighlight %}
+
+参考资料：
+
+- 作者：Hawstein 出处：[http://hawstein.com/posts/8.4.html](http://hawstein.com/posts/8.4.html "http://hawstein.com/posts/8.4.html")
