@@ -2,8 +2,8 @@
 layout: post
 title: "计算机网络复习"
 description: "计算机网络复习"
-category: 网络
-tags: [网络]
+category: network
+tags: [network]
 ---
 {% include JB/setup %}
 
