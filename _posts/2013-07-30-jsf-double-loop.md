@@ -13,23 +13,28 @@ tags: [JSP]
 
 前提：
 
-	{% highlight java %}
+{% highlight java %}
+
     List<List<ServeStationBean>> beanlists;
-	{% endhighlight %}
+
+{% endhighlight %}
 
 方案一：使用t:dataList
 
 步骤：
 
-	1.在jsp页面添加t标签说明：
+1.在jsp页面添加t标签说明：
 	
-	{% highlight html %}
-	<%@ taglib uri="http://myfaces.apache.org/tomahawk" prefix="t"%>
-	{% endhighlight %}
+{% highlight html %}
 
-	2.body中按如下方法进行遍历：
+	<%@ taglib uri="http://myfaces.apache.org/tomahawk" prefix="t"%>
+
+{% endhighlight %}
+
+2.body中按如下方法进行遍历：
 	
-	{% highlight html %}
+{% highlight html %}
+
 	<body>
 	<f:view>
 		<h:form>
@@ -58,21 +63,25 @@ tags: [JSP]
 		</h:form>
 	</f:view>
 	</body>
-	{% endhighlight %}
+
+{% endhighlight %}
 
 方案二：使用c:forEach
 
 步骤：
 
-	1.在jsp页面添加c标签说明：
+1.在jsp页面添加c标签说明：
 	
-	{% highlight html %}
+{% highlight html %}
+
 	<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-	{% endhighlight %}
+>
+{% endhighlight %}
 
-	2.body中按如下方法进行遍历：
+2.body中按如下方法进行遍历：
 
-	{% highlight html %}
+{% highlight html %}
+
 	<c:forEach items="${ ServeStationBean.beanlists }" var="item1">
 		<div id="mapwebsite">
 			<div class="title"> 
@@ -87,27 +96,33 @@ tags: [JSP]
 			</div>
 		</div>
 	</c:forEach>
-	{% endhighlight %}
+
+{% endhighlight %}
 	
 ## 对Map<List<Bean>>进行遍历 ##
 
 前提：
 	
-	{% highlight java %}
+{% highlight java %}
+
 	Map<String, List<ServeStationBean>> beanmap;
-	{% endhighlight %}
+
+{% endhighlight %}
 
 方案：使用c:forEach
 
-	1.在jsp页面添加c标签说明：
+1.在jsp页面添加c标签说明：
 	
-	{% highlight html %}
+{% highlight html %}
+
 	<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-	{% endhighlight %}
 
-	2.body中按如下方法进行遍历：
+{% endhighlight %}
 
-	{% highlight html %}
+2.body中按如下方法进行遍历：
+
+{% highlight html %}
+
 	<c:forEach items="${ ServeStationBean.beanmap }" var="map">
 		<div id="mapwebsite">
 			<div class="title">
@@ -122,6 +137,8 @@ tags: [JSP]
 			</div>
 		</div>
 	</c:forEach>
-	{% endhighlight %}
+
+
+{% endhighlight %}
 
 t:dataList不支持Map遍历，因此只能使用c:forEach
