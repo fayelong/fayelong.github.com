@@ -13,9 +13,9 @@ freemarker中文乱码
 
 网络上说的大多是在
 
-cfg.setEncoding(Locale.CHINA, "UTF-8");
+	cfg.setEncoding(Locale.CHINA, "UTF-8");
 
-Template template = cfg.getTemplate("index.ftl","UTF-8");
+	Template template = cfg.getTemplate("index.ftl","UTF-8");
 
 但这些并没有解决问题。
 
